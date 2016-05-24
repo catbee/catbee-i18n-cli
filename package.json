@@ -1,0 +1,50 @@
+{
+  "name": "catbee-i18n-cli",
+  "author": "Eugeny Dementev",
+  "description": "gettext string extractor on js for catbee-i18n packages",
+  "homepage": "https://github.com/catbee/catbee-i18n-cli#readme",
+  "version": "0.0.1",
+  "main": "index.js",
+  "scripts": {
+    "test": "lab -T node_modules/babel-lab -l",
+    "build": "babel src -d dist",
+    "eslint": "eslint ."
+  },
+  "bin": {
+    "i18n": "./bin/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/catbee/catbee-i18n-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/catbee/catbee-i18n-cli/issues"
+  },
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "dependencies": {
+    "archiver": "^1.0.0",
+    "commander": "^2.9.0",
+    "git-rev-sync": "^1.6.0",
+    "glob": "^7.0.3",
+    "lodash": "^4.13.1",
+    "mkdirp": "^0.5.1",
+    "po2json": "^0.4.2",
+    "shelljs": "^0.7.0"
+  },
+  "devDependencies": {
+    "codecov.io": "^0.1.6",
+    "eslint": "^2.9.0",
+    "lab": "^10.5.1"
+  },
+  "keywords": [
+    "PyBabel",
+    "gettext",
+    "i18n",
+    "extract",
+    "scrap",
+    "catbee"
+  ],
+  "license": "MIT"
+}
