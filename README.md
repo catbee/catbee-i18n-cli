@@ -2,7 +2,7 @@
 
 Wrapper for PyBabel configured for extract translates with catbee-i18n and catbee-i18n-handlebars
 
-# Installation
+## Installation
 
 To work with cli you need global installed python2.7 must install python module [babel](http://babel.pocoo.org/en/latest/installation.html).
 
@@ -12,7 +12,7 @@ And then
 npm install -g catbee-i18n-cli
 ```
 
-# Usage
+## Usage
 
 in your app directory can run
 ```
