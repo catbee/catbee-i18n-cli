@@ -21,11 +21,11 @@ program
   .option('-c, --copyright-holder', 'Copyright holder');
 
 program
-  .command('init')
+  .command('init [locale]')
   .description('Init new locale')
-  .action(() => {
+  .action((locale) => {
     program.directory = program.directory || config.directory;
-    init(program);
+    init(program, locale);
   });
 
 
@@ -55,11 +55,11 @@ program
   });
 
 program
-  .command('prepare')
-  .description('extract, update and archive commands in one shot')
-  .action(() => {
+  .command('prepare [dirs...]')
+  .description('extract, update and archive commands with one shot')
+  .action((dirs) => {
     program.directory = program.directory || config.directory;
-    extract(program);
+    extract(program, dirs);
     update(program);
     archive(program);
   });
