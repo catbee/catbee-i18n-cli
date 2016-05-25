@@ -23,7 +23,7 @@ i18n update
 i18n archive
 i18n po2json
 ```
-And now you we have next directories:
+And now you we have next:
 ```
 l10n
 ├── cs_CZ
