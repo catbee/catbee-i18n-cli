@@ -15,10 +15,10 @@ const po2json = require('../helpers/po2json');
 
 program
   .version(info.version)
-  .option('-d, --directory', 'Directory with translates [l10n]', config.directory)
+  .option('-d, --directory [dir]', 'Directory with translates [l10n]', config.directory)
   .option('-y, --young', 'Do not remove old translates', true)
-  .option('-a, --archive-name', 'Archive name')
-  .option('-c, --copyright-holder', 'Copyright holder');
+  .option('-a, --archive-name [name]', 'Archive name')
+  .option('-c, --copyright-holder [copyrightHolder]', 'Copyright holder');
 
 program
   .command('init [locale]')

@@ -89,3 +89,6 @@ crashlytics-build.properties
 fabric.properties
 
 dist/
+
+# Python
+*.pyc
