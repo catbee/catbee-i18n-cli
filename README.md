@@ -46,4 +46,5 @@ and line options:
 - `-d` `--directory` - Directory with translates [l10n]
 - `-y` `--young` - Do not remove old translates
 - `-a` `--archive-name` - Archive name
-- `-c` `--copyright-holder` - Copyright holder
+- `-c` `--copyright-holder` - PyBabel --copyright-holder option
+- `-b` `--bugs-address` - PyBabel --bugs-address option
