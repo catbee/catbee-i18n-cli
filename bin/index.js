@@ -18,6 +18,7 @@ program
   .option('-d, --directory [dir]', 'Directory with translates [l10n]', config.directory)
   .option('-y, --young', 'Do not remove old translates', true)
   .option('-a, --archive-name [name]', 'Archive name')
+  .option('-b, --bugs-address [bugsAddress]', 'Bugs Address')
   .option('-c, --copyright-holder [copyrightHolder]', 'Copyright holder');
 
 program
