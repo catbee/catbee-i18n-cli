@@ -3,7 +3,7 @@
   "author": "Eugeny Dementev",
   "description": "gettext string extractor on js for catbee-i18n packages",
   "homepage": "https://github.com/catbee/catbee-i18n-cli#readme",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
