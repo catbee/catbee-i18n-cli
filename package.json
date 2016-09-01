@@ -6,7 +6,7 @@
   "version": "0.0.3",
   "main": "index.js",
   "scripts": {
-    "test": "lab -T node_modules/babel-lab -l",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "babel src -d dist",
     "eslint": "eslint ."
   },
