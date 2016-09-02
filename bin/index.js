@@ -4,7 +4,8 @@ const info = require('../package.json');
 const program = require('commander');
 const config = {
   directory: 'l10n',
-  copyrightHolder: 'Catbee'
+  copyrightHolder: 'Catbee',
+  bugsAddress: 'notexistedbugsaddress@email.com'
 };
 
 const init = require('../helpers/init');
@@ -36,6 +37,7 @@ program
   .action((dirs) => {
     program.directory = program.directory || config.directory;
     program.copyrightHolder = program.copyrightHolder || config.copyrightHolder;
+    program.bugsAddress = program.bugsAddress || config.bugsAddress;
     extract(program, dirs);
   });
 program
@@ -57,7 +59,7 @@ program
 
 program
   .command('prepare [dirs...]')
-  .description('extract, update and archive commands with one shot')
+  .description('extract, update and archive commands by one shot')
   .action((dirs) => {
     program.directory = program.directory || config.directory;
     extract(program, dirs);
